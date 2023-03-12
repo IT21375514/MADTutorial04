@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtStudentId"
+        android:layout_width="276dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="119dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="119dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="146dp"
+        android:text="Register Student"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvYear"
+        android:layout_width="147dp"
+        android:layout_height="28dp"
+        android:text="Select academic year"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="126dp" />
+
+    <TextView
+        android:id="@+id/tvSemester"
+        android:layout_width="147dp"
+        android:layout_height="28dp"
+        android:text="Select the semester"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="220dp" />
+
+    <Spinner
+        android:id="@+id/spnYear"
+        android:layout_width="368dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:entries="@array/years"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvYear" />
+
+    <Spinner
+        android:id="@+id/spnSemester"
+        android:layout_width="366dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:entries="@array/semesters"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSemester" />
+
+    <CheckBox
+        android:id="@+id/cbAgree"
+        android:layout_width="301dp"
+        android:layout_height="43dp"
+        android:text="I agree to terms and conditions"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="344dp" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="199dp"
+        android:layout_height="47dp"
+        android:text="Submit"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="451dp" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="196dp"
+        android:layout_height="52dp"
+        android:text="cancel"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="559dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
